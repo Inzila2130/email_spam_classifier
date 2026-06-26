@@ -17,3 +17,12 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Generated evaluation images
+static/results/
+
+# macOS
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
