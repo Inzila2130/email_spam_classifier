@@ -1,4 +1,4 @@
-![MailShield Banner](assets/mailshield-banner.png)
+![MailShield Banner](static/assets/mailshield-banner.png)
 
 # MailShield - AI Email & SMS Spam Classifier
 [![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
@@ -38,25 +38,25 @@
 ## 🖼️ Screenshots
 
 ### Dark Theme
-![Dark Theme](screenshots/darktheme-web.png)
+![Dark Theme](static/assets/darktheme-web.png)
 
 ### Light Theme
-![Light Theme](screenshots/lighttheme-web.png)
+![Light Theme](static/assets/lighttheme-web.png)
 
 ### Spam Detection
-![Spam Example](screenshots/spam-web.png)
+![Spam Example](static/assets/spam-web.png)
 
 ### Ham Detection
-![Ham Example](screenshots/ham-web.png)
+![Ham Example](static/assets/ham-web.png)
 
 ### Mobile View (Light - Home Page)
-![Mobile Light](screenshots/mobileview_ligh.png)
+![Mobile Light](static/assets/mobileview_ligh.png)
 
 ### Mobile View (Dark - Spam)
-![Mobile Dark 1](screenshots/mobileview-dark2.png)
+![Mobile Dark 1](static/assets/mobileview-dark2.png)
 
 ### Mobile View (Dark - Spam View 2)
-![Mobile Dark 2](screenshots/mobileview-3.png)
+![Mobile Dark 2](static/assets/mobileview-3.png)
 
 ## 🧠 Machine Learning Pipeline
 
