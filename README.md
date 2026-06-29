@@ -1,81 +1,123 @@
-# 🛡️ MailShield – AI-Powered Email & SMS Spam Detector
+# 🛡️ MailShield - AI-Powered Email & SMS Spam Classifier
 
-MailShield is a Machine Learning-powered web application that classifies Email and SMS messages as **Spam** or **Ham (Legitimate)** using **Natural Language Processing (NLP)** and the **Multinomial Naive Bayes** algorithm.
+[![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-Built with **Flask**, MailShield provides a modern and responsive user interface featuring real-time spam prediction, confidence scores, prediction history, dark/light theme support, and an intuitive user experience.
+> An AI-powered web application that classifies Email and SMS messages as **Spam** or **Ham (Safe)** using Natural Language Processing (NLP) and Machine Learning.
 
 ---
 
-## ✨ Features
+## 🌐 Live Demo
 
-- 📧 Email & SMS Spam Detection
-- 🤖 Machine Learning using Multinomial Naive Bayes
-- 📝 TF-IDF Text Vectorization
-- 🧹 Natural Language Processing (NLP)
-- 📊 Prediction Confidence Score
-- ⚡ Prediction Time Display
-- 📈 Word & Character Counter
-- 📋 Copy Prediction Result
-- 💬 Sample Spam & Safe Messages
-- 🕒 Recent Prediction History
+🚀 **Try MailShield:**  
+**https://YOUR-RENDER-URL.onrender.com**
+
+> Replace the URL above with your actual Render deployment URL.
+
+---
+
+## 📌 Features
+
+- ✉️ Email & SMS Spam Detection
+- 🤖 Machine Learning Classification
+- 🧹 NLP Text Preprocessing
 - 🌙 Dark & ☀️ Light Theme
-- 💾 Theme Preference Memory
-- 📱 Fully Responsive User Interface
-- 🚫 Custom 404 Error Page
-- 🔒 Input Validation & Security Enhancements
+- 📊 Confidence Score Visualization
+- 📈 Prediction Statistics
+- 📋 Copy Prediction Result
+- 💬 Safe & Spam Sample Messages
+- 📜 Prediction History
+- 📱 Fully Responsive UI
+- ⚡ Fast Flask Backend
+
+---
+
+## 🖼️ Screenshots
+
+### Dark Theme
+
+> *(Add screenshot after deployment)*
+
+![Dark Theme](screenshots/dark-theme.png)
+
+### Light Theme
+
+> *(Add screenshot after deployment)*
+
+![Light Theme](screenshots/light-theme.png)
+
+---
+
+## 🧠 Machine Learning Pipeline
+
+```text
+Input Message
+      │
+      ▼
+Text Preprocessing
+      │
+      ▼
+TF-IDF Vectorization
+      │
+      ▼
+Multinomial Naive Bayes
+      │
+      ▼
+Spam / Ham Prediction
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - HTML5
 - CSS3
 - JavaScript
 
 ### Backend
-- Python
+
 - Flask
+- Python
 
 ### Machine Learning
-- Scikit-learn
-- Multinomial Naive Bayes
-- TF-IDF Vectorizer
 
-### Natural Language Processing
-- NLTK
-- Regular Expressions
-
-### Data Processing
+- Scikit-Learn
 - Pandas
 - NumPy
+- NLTK
+- Joblib
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-MailShield/
+Email Spam Classifier/
 │
 ├── app/
 │   └── app.py
 │
-├── dataset/
+├── data/
 │
 ├── models/
 │   ├── spam_model.pkl
-│   └── tfidf_vectorizer.pkl
+│   └── vectorizer.pkl
 │
 ├── src/
-│   ├── train.py
 │   ├── preprocess.py
+│   ├── train.py
 │   ├── predict.py
 │   └── evaluate.py
 │
 ├── static/
+│   ├── css/
+│   ├── js/
 │   ├── images/
-│   ├── style.css
-│   └── script.js
+│   └── icons/
 │
 ├── templates/
 │   ├── index.html
@@ -83,6 +125,9 @@ MailShield/
 │
 ├── requirements.txt
 ├── README.md
+├── Procfile
+├── runtime.txt
+├── render.yaml
 └── .gitignore
 ```
 
@@ -90,101 +135,84 @@ MailShield/
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/mailshield-ai-spam-detector.git
+git clone https://github.com/YOUR_USERNAME/email_spam_classifier.git
 ```
 
-### 2. Navigate to the project directory
+Go to the project folder:
 
 ```bash
-cd mailshield-ai-spam-detector
+cd email_spam_classifier
 ```
 
-### 3. Create a virtual environment (Optional but Recommended)
+Create a virtual environment:
 
 ```bash
 python -m venv venv
 ```
 
-### 4. Activate the virtual environment
+Activate the virtual environment
 
-**Windows**
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-**macOS/Linux**
+### Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-### 5. Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Run the Flask application
+Run the application:
 
 ```bash
 python app/app.py
 ```
 
-### 7. Open your browser
+Open your browser:
 
-```text
+```
 http://127.0.0.1:5000
 ```
 
 ---
 
-## 🧠 Machine Learning Workflow
+## 📊 Model Information
 
-1. Collect Dataset
-2. Clean and Preprocess Text
-3. Convert Text into TF-IDF Features
-4. Train the Multinomial Naive Bayes Model
-5. Save the Trained Model
-6. Predict Spam or Ham
-7. Display Confidence Score and Statistics
-
----
-
-## 🔒 Security Features
-
-- Input Validation
-- Maximum Character Limit
-- Secure Form Handling
-- Security Headers
-- Production-ready Configuration
-- Theme Preference Stored Locally
+| Property | Value |
+|----------|-------|
+| Algorithm | Multinomial Naive Bayes |
+| Feature Extraction | TF-IDF Vectorizer |
+| NLP | Tokenization, Stopword Removal, Stemming |
+| Language | Python |
 
 ---
 
-## 📸 Screenshots
+## 🚀 Future Improvements
 
-Screenshots will be added after deployment.
-
-- 🏠 Home Page (Dark Theme)
-- ☀️ Home Page (Light Theme)
-- 🚨 Spam Detection Result
-- ✅ Legitimate Message Result
-
----
-
-## 🚀 Future Enhancements
-
-- Deep Learning Models (LSTM/BERT)
 - User Authentication
-- Email Attachment Analysis
-- Database Integration
+- Email Inbox Integration
 - REST API
-- Cloud Deployment
+- Deep Learning Models
 - Multi-language Spam Detection
+- Cloud Database Support
+- Dashboard Analytics
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
 
 ---
 
@@ -192,20 +220,8 @@ Screenshots will be added after deployment.
 
 **Inzila Danish Khan**
 
-B.Tech Computer Science Engineering
-
-Machine Learning & AI Enthusiast
+GitHub: https://github.com/Inzila2130
 
 ---
 
-## 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome.
-
-Feel free to fork the repository and submit a pull request.
-
----
-
-## 📜 License
-
-This project is developed for educational and learning purposes.
+Thank you for visiting this project. Feedback and suggestions are always appreciated.
