@@ -15,7 +15,7 @@
 ## 🌐 Live Demo
 
 🚀 **Try MailShield:**  
-**https://mailshield-qu2v.onrender.com/*
+**https://mailshield-qu2v.onrender.com/**
 
 > Replace the URL above with your actual Render deployment URL.
 
