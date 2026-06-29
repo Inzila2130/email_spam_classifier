@@ -1,16 +1,40 @@
 import joblib
 from preprocess import clean_text
 
+
+# Load trained model and vectorizer
 model = joblib.load("models/spam_model.pkl")
-tfidf = joblib.load("models/tfidf_vectorizer.pkl")
+vectorizer = joblib.load("models/tfidf_vectorizer.pkl")
 
-def predict_message(text):
-    text = clean_text(text)
-    vector = tfidf.transform([text])
-    result = model.predict(vector)
 
-    return "SPAM 🚨" if result[0] == 1 else "HAM ✅"
+def predict_message(message):
+    """
+    Predict whether a message is Spam or Ham.
 
-# quick test
+    Returns:
+        prediction (str)
+        confidence (float)
+    """
+
+    cleaned_message = clean_text(message)
+
+    vector = vectorizer.transform([cleaned_message])
+
+    prediction = model.predict(vector)[0]
+
+    probability = model.predict_proba(vector)[0]
+
+    confidence = max(probability) * 100
+
+    label = "Spam" if prediction == 1 else "Ham"
+
+    return label, round(confidence, 2)
+
+
 if __name__ == "__main__":
-    print(predict_message("Win a free iPhone now"))
+    sample = "Congratulations! You have won a free iPhone."
+
+    prediction, confidence = predict_message(sample)
+
+    print(prediction)
+    print(confidence)
