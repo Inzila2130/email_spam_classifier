@@ -1,10 +1,12 @@
 ![MailShield Banner](static/assets/mailshield-banner.png)
 
 # MailShield - AI Email & SMS Spam Classifier
-[![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)](https://scikit-learn.org/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge&logo=flask)
+![Machine Learning](https://img.shields.io/badge/ML-Scikit_Learn-orange?style=for-the-badge&logo=scikitlearn)
+![NLP](https://img.shields.io/badge/NLP-TF_IDF-green?style=for-the-badge)
+![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-blueviolet?style=for-the-badge)
+![Deployment](https://img.shields.io/badge/Deployed-Render-46E3B7?style=for-the-badge&logo=render)
 
 > An AI-powered web application that classifies Email and SMS messages as **Spam** or **Ham (Safe)** using Natural Language Processing (NLP) and Machine Learning.
 
@@ -37,26 +39,28 @@
 
 ## 🖼️ Screenshots
 
-### Dark Theme
-![Dark Theme](static/assets/darktheme-web.png)
+### 🌙 Dark Mode
+<p float="left">
+  <img src="static/assets/darktheme-web.png" width="48%" />
+  <img src="static/assets/spam-web.png" width="48%" />
+</p>
 
-### Light Theme
-![Light Theme](static/assets/lighttheme-web.png)
+---
 
-### Spam Detection
-![Spam Example](static/assets/spam-web.png)
+### ☀️ Light Mode
+<p float="left">
+  <img src="static/assets/lighttheme-web.png" width="48%" />
+  <img src="static/assets/ham-web.png" width="48%" />
+</p>
 
-### Ham Detection
-![Ham Example](static/assets/ham-web.png)
+---
 
-### Mobile View (Light - Home Page)
-![Mobile Light](static/assets/mobileview_ligh.png)
-
-### Mobile View (Dark - Spam)
-![Mobile Dark 1](static/assets/mobileview-dark2.png)
-
-### Mobile View (Dark - Spam View 2)
-![Mobile Dark 2](static/assets/mobileview-3.png)
+### 📱 Mobile Views
+<p float="left">
+  <img src="static/assets/mobileview-light-home.png" width="32%" />
+  <img src="static/assets/mobileview-dark-spam1.png" width="32%" />
+  <img src="static/assets/mobileview-dark-spam2.png" width="32%" />
+</p>
 
 ## 🧠 Machine Learning Pipeline
 
