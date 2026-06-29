@@ -1,5 +1,6 @@
-# 🛡️ MailShield - AI-Powered Email & SMS Spam Classifier
+![MailShield Banner](assets/mailshield-banner.png)
 
+# MailShield - AI Email & SMS Spam Classifier
 [![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)](https://scikit-learn.org/)
@@ -37,18 +38,25 @@
 ## 🖼️ Screenshots
 
 ### Dark Theme
-
-> *(Add screenshot after deployment)*
-
-![Dark Theme](screenshots/dark-theme.png)
+![Dark Theme](screenshots/darktheme-web.png)
 
 ### Light Theme
+![Light Theme](screenshots/lighttheme-web.png)
 
-> *(Add screenshot after deployment)*
+### Spam Detection
+![Spam Example](screenshots/spam-web.png)
 
-![Light Theme](screenshots/light-theme.png)
+### Ham Detection
+![Ham Example](screenshots/ham-web.png)
 
----
+### Mobile View (Light - Home Page)
+![Mobile Light](screenshots/mobileview_ligh.png)
+
+### Mobile View (Dark - Spam)
+![Mobile Dark 1](screenshots/mobileview-dark2.png)
+
+### Mobile View (Dark - Spam View 2)
+![Mobile Dark 2](screenshots/mobileview-3.png)
 
 ## 🧠 Machine Learning Pipeline
 
