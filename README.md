@@ -57,9 +57,9 @@
 
 ### 📱 Mobile Views
 <p float="left">
-  <img src="static/assets/mobileview-light-home.png" width="32%" />
-  <img src="static/assets/mobileview-dark-spam1.png" width="32%" />
-  <img src="static/assets/mobileview-dark-spam2.png" width="32%" />
+  <img src="static/assets/mobileview-light-home.jpeg" width="32%" />
+  <img src="static/assets/mobileview-dark-spam1.jpeg" width="32%" />
+  <img src="static/assets/mobileview-dark-spam2.jpeg" width="32%" />
 </p>
 
 ## 🧠 Machine Learning Pipeline
